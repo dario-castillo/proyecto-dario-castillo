@@ -55,19 +55,14 @@
 
 #main-acerca .titulo {
     display: grid;
-    font-family: "Open Sans";
-    font-size: large;
-    text-align: center;
-    align-items: center;
-    background-color: lightgray;
     width: 180px;
-    height: 30px;
-    margin: 5px 5px 10px 5px;
+    @extend .estilo-titulo;
 }
 
 #main-acerca .subtitulo {
     display: grid;
     font-family: "Open Sans";
+    color: rgb(7, 135, 135);
     font-size: large;
     text-align: center;
     align-items: center;
@@ -90,3 +85,38 @@
     font-style: normal;
     margin: 10px 5px 10px 5px;
 }
+
+@media(max-width: 992px){
+    #main-acerca{
+        width: 300px;
+    }
+    #main-acerca .container{
+        width: 300px;
+    }
+    #main-acerca .parrafo{
+        width: 300px;
+        height: 250px;
+    }
+    #main-acerca .primero{
+        font-size: small; 
+    }
+    #main-acerca .segundo{
+        font-size: smaller;
+    }
+    #main-acerca .imagen-1{
+        display: none;
+    }
+    #main-acerca .parrafo-2{
+        width: 300px;
+    }
+    #main-acerca .imagen-2{
+        width: 300px;
+        height: 250px;
+    }
+    #main-acerca .daredevil{
+        height: 150px;
+    }
+    .footer p{
+        font-size: smaller;
+    }
+    }

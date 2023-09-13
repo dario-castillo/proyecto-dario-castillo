@@ -1,11 +1,7 @@
-#main-portfolio div .titulo {
-    font-family: "Open Sans";
-    font-size: large;
-    text-align: center;
-    background-color: lightgray;
+#main-portfolio .titulo {
+    display: flex;
     width: 250px;
-    height: 30px;
-    margin: 5px 5px 10px 5px;
+    @extend .estilo-titulo;
 }
 
 #main-portfolio div .primero {

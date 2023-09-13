@@ -5,15 +5,26 @@
   font-family: "Open Sans";
   src: url("../recursos/fonts/OpenSans-VariableFont_wdth.ttf"); }
 
+.estilo-titulo, #main-acerca .titulo, #main-portfolio .titulo, #main-tienda .titulo, #main-contacto .titulo {
+  font-family: "Open Sans";
+  color: #078787;
+  font-size: large;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  background-color: lightgray;
+  height: 30px;
+  margin: 5px 5px 10px 5px; }
+
 /* SECCIONES */
 .text-white:hover {
   background-color: #0d676d;
   border-radius: 5px; }
 
-#main-index .titulo {
+#main-index .titulo-index {
   display: flex;
   font-family: "Open Sans";
-  font-size: xx-large;
+  font-size: x-large;
   color: #078787;
   justify-content: center;
   background-color: lightgray;
@@ -69,18 +80,12 @@
 
 #main-acerca .titulo {
   display: grid;
-  font-family: "Open Sans";
-  font-size: large;
-  text-align: center;
-  align-items: center;
-  background-color: lightgray;
-  width: 180px;
-  height: 30px;
-  margin: 5px 5px 10px 5px; }
+  width: 180px; }
 
 #main-acerca .subtitulo {
   display: grid;
   font-family: "Open Sans";
+  color: #078787;
   font-size: large;
   text-align: center;
   align-items: center;
@@ -101,14 +106,33 @@
   font-style: normal;
   margin: 10px 5px 10px 5px; }
 
-#main-portfolio div .titulo {
-  font-family: "Open Sans";
-  font-size: large;
-  text-align: center;
-  background-color: lightgray;
-  width: 250px;
-  height: 30px;
-  margin: 5px 5px 10px 5px; }
+@media (max-width: 992px) {
+  #main-acerca {
+    width: 300px; }
+  #main-acerca .container {
+    width: 300px; }
+  #main-acerca .parrafo {
+    width: 300px;
+    height: 250px; }
+  #main-acerca .primero {
+    font-size: small; }
+  #main-acerca .segundo {
+    font-size: smaller; }
+  #main-acerca .imagen-1 {
+    display: none; }
+  #main-acerca .parrafo-2 {
+    width: 300px; }
+  #main-acerca .imagen-2 {
+    width: 300px;
+    height: 250px; }
+  #main-acerca .daredevil {
+    height: 150px; }
+  .footer p {
+    font-size: smaller; } }
+
+#main-portfolio .titulo {
+  display: flex;
+  width: 250px; }
 
 #main-portfolio div .primero {
   font-family: ballinger, sans-serif;
@@ -119,14 +143,12 @@
 #main-portfolio div img {
   height: 400px; }
 
-#main-tienda div .titulo {
-  font-family: "Open Sans";
-  font-size: large;
-  text-align: center;
-  background-color: lightgray;
-  width: 250px;
-  height: 30px;
-  margin: 5px 5px 10px 5px; }
+#main-tienda {
+  display: flex; }
+
+#main-tienda .titulo {
+  display: flex;
+  width: 250px; }
 
 #main-tienda div .primero {
   font-family: ballinger, sans-serif;
@@ -141,13 +163,8 @@
   margin: 70px 5px 140px 5px; }
 
 #main-contacto .titulo {
-  font-family: "Open Sans";
-  font-size: large;
-  text-align: center;
-  background-color: lightgray;
-  width: 250px;
-  height: 30px;
-  margin: 30px 5px 10px 5px; }
+  display: flex;
+  width: 250px; }
 
 #main-contacto .subtitulo {
   font-family: "Open Sans";
@@ -9462,27 +9479,3 @@ textarea.form-control-lg {
     display: inline-flex !important; }
   .d-print-none {
     display: none !important; } }
-
-@media (max-width: 992px) {
-  #main-acerca {
-    width: 300px; }
-  #main-acerca .container {
-    width: 300px; }
-  #main-acerca .parrafo {
-    width: 300px;
-    height: 250px; }
-  #main-acerca .primero {
-    font-size: small; }
-  #main-acerca .segundo {
-    font-size: smaller; }
-  #main-acerca .imagen-1 {
-    display: none; }
-  #main-acerca .parrafo-2 {
-    width: 300px; }
-  #main-acerca .imagen-2 {
-    width: 300px;
-    height: 250px; }
-  #main-acerca .daredevil {
-    height: 150px; }
-  .footer p {
-    font-size: smaller; } }

@@ -3,13 +3,9 @@
 }
 
 #main-contacto .titulo {
-    font-family: "Open Sans";
-    font-size: large;
-    text-align: center;
-    background-color: lightgray;
+    display: flex;
     width: 250px;
-    height: 30px;
-    margin: 30px 5px 10px 5px;
+    @extend .estilo-titulo;
 }
 
 #main-contacto .subtitulo {

@@ -6,6 +6,7 @@
 @import url("https://use.typekit.net/iud1kav.css");
 
 @import'./variables/color';
+@import'./variables/extend';
 
 /* SECCIONES */
 @import'./secciones/header';
@@ -18,38 +19,4 @@
 
 @import "../node_modules/bootstrap/scss/bootstrap";
 
-@media(max-width: 992px){
-    #main-acerca{
-        width: 300px;
-    }
-    #main-acerca .container{
-        width: 300px;
-    }
-    #main-acerca .parrafo{
-        width: 300px;
-        height: 250px;
-    }
-    #main-acerca .primero{
-        font-size: small; 
-    }
-    #main-acerca .segundo{
-        font-size: smaller;
-    }
-    #main-acerca .imagen-1{
-        display: none;
-    }
-    #main-acerca .parrafo-2{
-        width: 300px;
-    }
-    #main-acerca .imagen-2{
-        width: 300px;
-        height: 250px;
-    }
-    #main-acerca .daredevil{
-        height: 150px;
-    }
-    .footer p{
-        font-size: smaller;
-    }
-    }
 
