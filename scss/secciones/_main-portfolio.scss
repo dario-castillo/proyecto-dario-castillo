@@ -14,4 +14,8 @@
 
 #main-portfolio div img {
     height: 400px;
+    transition: all .1s;
+}
+#main-portfolio img:hover{
+    transform: scale(1.05)
 }

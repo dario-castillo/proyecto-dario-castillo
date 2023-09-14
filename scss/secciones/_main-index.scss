@@ -7,3 +7,14 @@
     background-color: lightgray;
     height: 60px;
 }
+@keyframes nitidez{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+.img-fluid{
+    animation: nitidez 6s ease-out;
+}

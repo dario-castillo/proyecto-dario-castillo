@@ -30,6 +30,15 @@
   background-color: lightgray;
   height: 60px; }
 
+@keyframes nitidez {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+.img-fluid {
+  animation: nitidez 6s ease-out; }
+
 .container {
   display: grid;
   grid-template-columns: 2fr 4fr;
@@ -141,7 +150,11 @@
   margin: 10px 5px 10px 5px; }
 
 #main-portfolio div img {
-  height: 400px; }
+  height: 400px;
+  transition: all .1s; }
+
+#main-portfolio img:hover {
+  transform: scale(1.05); }
 
 #main-tienda {
   display: flex; }
@@ -157,7 +170,11 @@
   margin: 10px 5px 10px 5px; }
 
 #main-tienda div img {
-  height: 400px; }
+  height: 400px;
+  transition: all .1s; }
+
+#main-tienda img:hover {
+  transform: scale(1.05); }
 
 #main-contacto section {
   margin: 70px 5px 140px 5px; }

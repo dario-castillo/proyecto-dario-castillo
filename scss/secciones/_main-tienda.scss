@@ -17,4 +17,9 @@
 
 #main-tienda div img {
     height: 400px;
+    transition: all .1s;
+}
+
+#main-tienda img:hover{
+    transform: scale(1.05)
 }
