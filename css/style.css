@@ -5,7 +5,7 @@
   font-family: "Open Sans";
   src: url("../recursos/fonts/OpenSans-VariableFont_wdth.ttf"); }
 
-.estilo-titulo, #main-acerca .titulo, #main-portfolio .titulo, #main-tienda .titulo, #main-contacto .titulo {
+.estilo-titulo, #main-acerca .parrafo .titulo, #main-portfolio .titulo, #main-tienda .titulo, #main-contacto section .titulo {
   font-family: "Open Sans";
   color: #078787;
   font-size: large;
@@ -24,9 +24,10 @@
 #main-index .titulo-index {
   display: flex;
   font-family: "Open Sans";
-  font-size: x-large;
+  font-size: large;
   color: #078787;
   justify-content: center;
+  align-items: center;
   background-color: lightgray;
   height: 60px; }
 
@@ -36,10 +37,10 @@
   100% {
     opacity: 1; } }
 
-.img-fluid {
+#main-index .img-fluid {
   animation: nitidez 6s ease-out; }
 
-.container {
+#main-acerca .container {
   display: grid;
   grid-template-columns: 2fr 4fr;
   grid-template-rows: 1fr 0.3fr 1fr;
@@ -47,95 +48,84 @@
   grid-auto-flow: row;
   grid-template-areas: "parrafo imagen-1" "parrafo-2 parrafo-2" "imagen-2 imagen-2"; }
 
-.parrafo {
+#main-acerca .parrafo {
   grid-area: parrafo; }
 
-.imagen-1 {
+#main-acerca .imagen-1 {
   grid-area: imagen-1; }
 
-.parrafo-2 {
+#main-acerca .parrafo-2 {
   grid-area: parrafo-2; }
 
-.imagen-2 {
+#main-acerca .imagen-2 {
   grid-area: imagen-2; }
 
-#main-acerca {
-  display: grid; }
+#main-acerca .parrafo {
+  height: 500px;
+  padding: 0 10px; }
+  #main-acerca .parrafo .titulo {
+    display: grid;
+    width: 180px; }
+  #main-acerca .parrafo .primero {
+    font-family: ballinger, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    margin: 0 5px; }
 
 #main-acerca .imagen-1 {
   height: 500px;
   display: grid;
   justify-content: center;
   align-items: center; }
+  #main-acerca .imagen-1 .vision {
+    height: 500px; }
 
-#main-acerca .vision {
-  height: 500px; }
+#main-acerca .parrafo-2 {
+  padding: 15px; }
+  #main-acerca .parrafo-2 .subtitulo {
+    display: grid;
+    font-family: "Open Sans";
+    color: #078787;
+    font-size: large;
+    text-align: center;
+    align-items: center;
+    background-color: lightgray;
+    width: 180px;
+    height: 30px; }
+  #main-acerca .parrafo-2 .segundo {
+    font-family: ballinger, sans-serif;
+    font-size: larger;
+    font-weight: 300;
+    font-style: normal;
+    margin: 10px 5px 10px 5px; }
 
 #main-acerca .imagen-2 {
   display: grid;
   justify-content: center;
   align-items: center;
   height: 500px; }
-
-#main-acerca .daredevil {
-  height: 480px; }
-
-#main-acerca .parrafo {
-  height: 500px;
-  padding: 0 10px; }
-
-#main-acerca .parrafo-2 {
-  padding: 15px; }
-
-#main-acerca .titulo {
-  display: grid;
-  width: 180px; }
-
-#main-acerca .subtitulo {
-  display: grid;
-  font-family: "Open Sans";
-  color: #078787;
-  font-size: large;
-  text-align: center;
-  align-items: center;
-  background-color: lightgray;
-  width: 180px;
-  height: 30px; }
-
-#main-acerca .primero {
-  font-family: ballinger, sans-serif;
-  font-weight: 300;
-  font-style: normal;
-  margin: 0 5px; }
-
-#main-acerca .segundo {
-  font-family: ballinger, sans-serif;
-  font-size: larger;
-  font-weight: 300;
-  font-style: normal;
-  margin: 10px 5px 10px 5px; }
+  #main-acerca .imagen-2 .daredevil {
+    height: 480px; }
 
 @media (max-width: 992px) {
   #main-acerca {
     width: 300px; }
-  #main-acerca .container {
-    width: 300px; }
-  #main-acerca .parrafo {
-    width: 300px;
-    height: 250px; }
-  #main-acerca .primero {
-    font-size: small; }
-  #main-acerca .segundo {
-    font-size: smaller; }
-  #main-acerca .imagen-1 {
-    display: none; }
-  #main-acerca .parrafo-2 {
-    width: 300px; }
-  #main-acerca .imagen-2 {
-    width: 300px;
-    height: 250px; }
-  #main-acerca .daredevil {
-    height: 150px; }
+    #main-acerca .parrafo {
+      width: 300px;
+      height: 250px; }
+      #main-acerca .parrafo .primero {
+        font-size: small; }
+    #main-acerca .imagen-1 {
+      display: none; }
+    #main-acerca .parrafo-2 {
+      width: 300px; }
+      #main-acerca .parrafo-2 .segundo {
+        font-size: smaller; }
+    #main-acerca .imagen-2 {
+      width: 300px;
+      height: 250px; }
+      #main-acerca .imagen-2 .daredevil {
+        height: 150px; }
   .footer p {
     font-size: smaller; } }
 
@@ -143,61 +133,51 @@
   display: flex;
   width: 250px; }
 
-#main-portfolio div .primero {
+#main-portfolio .primero {
   font-family: ballinger, sans-serif;
   font-weight: 300;
   font-style: normal;
   margin: 10px 5px 10px 5px; }
 
-#main-portfolio div img {
+#main-portfolio img {
   height: 400px;
   transition: all .1s; }
-
-#main-portfolio img:hover {
-  transform: scale(1.05); }
+  #main-portfolio img:hover {
+    transform: scale(1.05); }
 
 #main-tienda {
   display: flex; }
-
-#main-tienda .titulo {
-  display: flex;
-  width: 250px; }
-
-#main-tienda div .primero {
-  font-family: ballinger, sans-serif;
-  font-weight: 300;
-  font-style: normal;
-  margin: 10px 5px 10px 5px; }
-
-#main-tienda div img {
-  height: 400px;
-  transition: all .1s; }
-
-#main-tienda img:hover {
-  transform: scale(1.05); }
+  #main-tienda .titulo {
+    display: flex;
+    width: 250px; }
+  #main-tienda .primero {
+    font-family: ballinger, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    margin: 10px 5px 10px 5px; }
+  #main-tienda img {
+    height: 400px;
+    transition: all .1s; }
+    #main-tienda img:hover {
+      transform: scale(1.05); }
 
 #main-contacto section {
-  margin: 70px 5px 140px 5px; }
-
-#main-contacto .titulo {
   display: flex;
-  width: 250px; }
-
-#main-contacto .subtitulo {
-  font-family: "Open Sans";
-  font-size: large;
-  margin: 30px 5px 10px 5px; }
-
-#main-contacto .subtitulo-2 {
-  font-family: "Open Sans";
-  font-size: large;
-  margin: 30px 5px 10px 5px; }
-
-#main-contacto p {
-  font-family: ballinger, sans-serif;
-  font-weight: 300;
-  font-style: normal;
-  margin: 10px 5px 10px 5px; }
+  flex-direction: column;
+  align-items: center;
+  height: 70vh;
+  justify-content: center; }
+  #main-contacto section .titulo {
+    display: flex;
+    width: 250px; }
+  #main-contacto section .subtitulo {
+    font-family: "Open Sans";
+    font-size: large;
+    margin: 30px 5px 10px 5px; }
+  #main-contacto section .subtitulo-2 {
+    font-family: "Open Sans";
+    font-size: large;
+    margin: 30px 5px 10px 5px; }
 
 .footer {
   display: grid;

@@ -1,122 +1,133 @@
-.container {
-    display: grid;
-    grid-template-columns: 2fr 4fr;
-    grid-template-rows: 1fr 0.3fr 1fr;
-    gap: 0px 0px;
-    grid-auto-flow: row;
-    grid-template-areas:
-      "parrafo imagen-1"
-      "parrafo-2 parrafo-2"
-      "imagen-2 imagen-2";
-  }
-  
-  .parrafo { grid-area: parrafo; }
-  
-  .imagen-1 { grid-area: imagen-1; }
-  
-  .parrafo-2 { grid-area: parrafo-2; }
-  
-  .imagen-2 { grid-area: imagen-2; }
-  
+#main-acerca {
+    .container {
+        display: grid;
+        grid-template-columns: 2fr 4fr;
+        grid-template-rows: 1fr 0.3fr 1fr;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+            "parrafo imagen-1"
+            "parrafo-2 parrafo-2"
+            "imagen-2 imagen-2";
+    }
 
-#main-acerca{
-    display: grid;
+    .parrafo {
+        grid-area: parrafo;
+    }
+
+    .imagen-1 {
+        grid-area: imagen-1;
+    }
+
+    .parrafo-2 {
+        grid-area: parrafo-2;
+    }
+
+    .imagen-2 {
+        grid-area: imagen-2;
+    }
+
+    .parrafo {
+        height: 500px;
+        padding: 0 10px;
+
+        .titulo {
+            display: grid;
+            width: 180px;
+            @extend .estilo-titulo;
+        }
+
+        .primero {
+            font-family: ballinger, sans-serif;
+            font-weight: 300;
+            font-style: normal;
+            margin: 0 5px;
+        }
+    }
+
+    .imagen-1 {
+        height: 500px;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+
+        .vision {
+            height: 500px;
+        }
+    }
+
+    .parrafo-2 {
+        padding: 15px;
+
+        .subtitulo {
+            display: grid;
+            font-family: "Open Sans";
+            color: rgb(7, 135, 135);
+            font-size: large;
+            text-align: center;
+            align-items: center;
+            background-color: lightgray;
+            width: 180px;
+            height: 30px;
+        }
+
+        .segundo {
+            font-family: ballinger, sans-serif;
+            font-size: larger;
+            font-weight: 300;
+            font-style: normal;
+            margin: 10px 5px 10px 5px;
+        }
+    }
+
+    .imagen-2 {
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        height: 500px;
+
+        .daredevil {
+            height: 480px;
+        }
+    }
 }
 
-#main-acerca .imagen-1 {
-    height: 500px;
-    display: grid;
-    justify-content: center;
-    align-items: center;
-}
-
-#main-acerca .vision{
-    height: 500px;
-}
-
-#main-acerca .imagen-2 {
-    display: grid;
-    justify-content: center;
-    align-items: center;
-    height: 500px;
-}
-#main-acerca .daredevil{
-    height: 480px;
-}
-
-#main-acerca .parrafo {
-    height: 500px;
-    padding: 0 10px;
-}
-
-#main-acerca .parrafo-2 {
-    padding: 15px;
-}
-
-#main-acerca .titulo {
-    display: grid;
-    width: 180px;
-    @extend .estilo-titulo;
-}
-
-#main-acerca .subtitulo {
-    display: grid;
-    font-family: "Open Sans";
-    color: rgb(7, 135, 135);
-    font-size: large;
-    text-align: center;
-    align-items: center;
-    background-color: lightgray;
-    width: 180px;
-    height: 30px;
-}
-
-#main-acerca .primero {
-    font-family: ballinger, sans-serif;
-    font-weight: 300;
-    font-style: normal;
-    margin: 0 5px;
-}
-
-#main-acerca .segundo {
-    font-family: ballinger, sans-serif;
-    font-size: larger;
-    font-weight: 300;
-    font-style: normal;
-    margin: 10px 5px 10px 5px;
-}
-
-@media(max-width: 992px){
-    #main-acerca{
+@media(max-width: 992px) {
+    #main-acerca {
         width: 300px;
+
+        .parrafo {
+            width: 300px;
+            height: 250px;
+
+            .primero {
+                font-size: small;
+            }
+        }
+
+        .imagen-1 {
+            display: none;
+        }
+
+        .parrafo-2 {
+            width: 300px;
+
+            .segundo {
+                font-size: smaller;
+            }
+        }
+
+        .imagen-2 {
+            width: 300px;
+            height: 250px;
+
+            .daredevil {
+                height: 150px;
+            }
+        }
     }
-    #main-acerca .container{
-        width: 300px;
-    }
-    #main-acerca .parrafo{
-        width: 300px;
-        height: 250px;
-    }
-    #main-acerca .primero{
-        font-size: small; 
-    }
-    #main-acerca .segundo{
+
+    .footer p {
         font-size: smaller;
     }
-    #main-acerca .imagen-1{
-        display: none;
-    }
-    #main-acerca .parrafo-2{
-        width: 300px;
-    }
-    #main-acerca .imagen-2{
-        width: 300px;
-        height: 250px;
-    }
-    #main-acerca .daredevil{
-        height: 150px;
-    }
-    .footer p{
-        font-size: smaller;
-    }
-    }
+}

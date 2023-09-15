@@ -1,21 +1,23 @@
-#main-portfolio .titulo {
-    display: flex;
-    width: 250px;
-    @extend .estilo-titulo;
-}
+#main-portfolio {
+    .titulo {
+        display: flex;
+        width: 250px;
+        @extend .estilo-titulo;
+    }
 
-#main-portfolio div .primero {
-    font-family: ballinger, sans-serif;
-    font-weight: 300;
-    font-style: normal;
-    margin: 10px 5px 10px 5px;
-}
+    .primero {
+        font-family: ballinger, sans-serif;
+        font-weight: 300;
+        font-style: normal;
+        margin: 10px 5px 10px 5px;
+    }
 
+    img {
+        height: 400px;
+        transition: all .1s;
 
-#main-portfolio div img {
-    height: 400px;
-    transition: all .1s;
-}
-#main-portfolio img:hover{
-    transform: scale(1.05)
+        &:hover {
+            transform: scale(1.05)
+        }
+    }
 }

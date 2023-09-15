@@ -1,25 +1,25 @@
-#main-tienda{
+#main-tienda {
     display: flex;
-}
 
-#main-tienda .titulo {
-    display: flex;
-    width: 250px;
-    @extend .estilo-titulo;
-}
+    .titulo {
+        display: flex;
+        width: 250px;
+        @extend .estilo-titulo;
+    }
 
-#main-tienda div .primero {
-    font-family: ballinger, sans-serif;
-    font-weight: 300;
-    font-style: normal;
-    margin: 10px 5px 10px 5px;
-}
+    .primero {
+        font-family: ballinger, sans-serif;
+        font-weight: 300;
+        font-style: normal;
+        margin: 10px 5px 10px 5px;
+    }
 
-#main-tienda div img {
-    height: 400px;
-    transition: all .1s;
-}
+    img {
+        height: 400px;
+        transition: all .1s;
 
-#main-tienda img:hover{
-    transform: scale(1.05)
+        &:hover {
+            transform: scale(1.05)
+        }
+    }
 }

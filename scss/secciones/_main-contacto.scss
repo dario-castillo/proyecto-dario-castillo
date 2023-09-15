@@ -1,30 +1,27 @@
-#main-contacto section {
-    margin: 70px 5px 140px 5px;
-}
+#main-contacto {
+    section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 70vh;
+        justify-content: center;
 
-#main-contacto .titulo {
-    display: flex;
-    width: 250px;
-    @extend .estilo-titulo;
-    
-}
+        .titulo {
+            display: flex;
+            width: 250px;
+            @extend .estilo-titulo;
+        }
 
-#main-contacto .subtitulo {
-    font-family: "Open Sans";
-    font-size: large;
-    margin: 30px 5px 10px 5px;
+        .subtitulo {
+            font-family: "Open Sans";
+            font-size: large;
+            margin: 30px 5px 10px 5px;
+        }
 
-}
-
-#main-contacto .subtitulo-2 {
-    font-family: "Open Sans";
-    font-size: large;
-    margin: 30px 5px 10px 5px;
-}
-
-#main-contacto p {
-    font-family: ballinger, sans-serif;
-    font-weight: 300;
-    font-style: normal;
-    margin: 10px 5px 10px 5px;
+        .subtitulo-2 {
+            font-family: "Open Sans";
+            font-size: large;
+            margin: 30px 5px 10px 5px;
+        }
+    }
 }

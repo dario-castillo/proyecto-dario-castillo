@@ -1,20 +1,26 @@
-#main-index .titulo-index {
-    display: flex;
-    font-family: "Open Sans";
-    font-size: x-large;
-    color: rgb(7, 135, 135);
-    justify-content: center;
-    background-color: lightgray;
-    height: 60px;
-}
-@keyframes nitidez{
-    0%{
-        opacity: 0;
+#main-index {
+    .titulo-index {
+        display: flex;
+        font-family: "Open Sans";
+        font-size: large;
+        color: rgb(7, 135, 135);
+        justify-content: center;
+        align-items: center;
+        background-color: lightgray;
+        height: 60px;
     }
-    100%{
-        opacity: 1;
+
+    @keyframes nitidez {
+        0% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
+        }
     }
-}
-.img-fluid{
-    animation: nitidez 6s ease-out;
+
+    .img-fluid {
+        animation: nitidez 6s ease-out;
+    }
 }
