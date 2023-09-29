@@ -13,23 +13,30 @@
   align-items: center;
   justify-content: center;
   background-color: lightgray;
-  height: 30px;
-  margin: 5px 5px 10px 5px; }
+  height: 30px; }
 
 /* SECCIONES */
 .text-white:hover {
   background-color: #0d676d;
   border-radius: 5px; }
 
-#main-index .titulo-index {
+#main-index .container-fluid, #main-index .container-sm, #main-index .container-md, #main-index .container-lg, #main-index .container-xl, #main-index .container-xxl {
   display: flex;
-  font-family: "Open Sans";
-  font-size: large;
-  color: #078787;
-  justify-content: center;
-  align-items: center;
-  background-color: lightgray;
-  height: 60px; }
+  flex-direction: column;
+  max-width: 800px;
+  justify-content: space-evenly;
+  height: 80vh; }
+  #main-index .container-fluid .titulo-index, #main-index .container-sm .titulo-index, #main-index .container-md .titulo-index, #main-index .container-lg .titulo-index, #main-index .container-xl .titulo-index, #main-index .container-xxl .titulo-index {
+    display: flex;
+    justify-content: space-evenly;
+    font-family: "Open Sans";
+    font-size: large;
+    color: #078787;
+    align-items: center;
+    background-color: lightgray;
+    width: 270px;
+    height: 30px;
+    margin: 5px auto; }
 
 @keyframes nitidez {
   0% {
@@ -38,10 +45,21 @@
     opacity: 1; } }
 
 #main-index .img-fluid {
+  width: 400px;
+  margin: auto;
   animation: nitidez 6s ease-out; }
+
+@media (max-width: 711px) {
+  #main-index {
+    margin: auto;
+    max-width: 300px; }
+  img.img-fluid {
+    max-width: 280px;
+    margin: auto; } }
 
 #main-acerca .container {
   display: grid;
+  margin: auto;
   grid-template-columns: 2fr 4fr;
   grid-template-rows: 1fr 0.3fr 1fr;
   gap: 0px 0px;
@@ -65,6 +83,7 @@
   padding: 0 10px; }
   #main-acerca .parrafo .titulo {
     display: grid;
+    margin: 5px auto;
     width: 180px; }
   #main-acerca .parrafo .primero {
     font-family: ballinger, sans-serif;
@@ -78,12 +97,14 @@
   justify-content: center;
   align-items: center; }
   #main-acerca .imagen-1 .vision {
-    height: 500px; }
+    margin: 5px auto;
+    height: 490px; }
 
 #main-acerca .parrafo-2 {
-  padding: 15px; }
+  padding: 25px; }
   #main-acerca .parrafo-2 .subtitulo {
     display: grid;
+    margin: 5px auto;
     font-family: "Open Sans";
     color: #078787;
     font-size: large;
@@ -93,6 +114,7 @@
     width: 180px;
     height: 30px; }
   #main-acerca .parrafo-2 .segundo {
+    text-align: center;
     font-family: ballinger, sans-serif;
     font-size: larger;
     font-weight: 300;
@@ -109,6 +131,7 @@
 
 @media (max-width: 992px) {
   #main-acerca {
+    margin: auto;
     width: 300px; }
     #main-acerca .parrafo {
       width: 300px;
@@ -126,46 +149,94 @@
       height: 250px; }
       #main-acerca .imagen-2 .daredevil {
         height: 150px; }
-  .footer p {
-    font-size: smaller; } }
+  .footer {
+    flex-direction: column; }
+    .footer p {
+      font-size: smaller; } }
 
-#main-portfolio .titulo {
+#main-portfolio {
+  height: 80vh;
   display: flex;
-  width: 250px; }
-
-#main-portfolio .primero {
-  font-family: ballinger, sans-serif;
-  font-weight: 300;
-  font-style: normal;
-  margin: 10px 5px 10px 5px; }
-
-#main-portfolio img {
-  height: 400px;
-  transition: all .1s; }
-  #main-portfolio img:hover {
-    transform: scale(1.05); }
-
-#main-tienda {
-  display: flex; }
-  #main-tienda .titulo {
+  max-width: 800px;
+  margin: auto;
+  justify-content: space-evenly; }
+  #main-portfolio .titulo {
     display: flex;
-    width: 250px; }
-  #main-tienda .primero {
+    width: 180px;
+    margin: 5px auto; }
+  #main-portfolio .primero {
+    display: flex;
+    justify-content: center;
     font-family: ballinger, sans-serif;
     font-weight: 300;
-    font-style: normal;
-    margin: 10px 5px 10px 5px; }
-  #main-tienda img {
-    height: 400px;
-    transition: all .1s; }
-    #main-tienda img:hover {
-      transform: scale(1.05); }
+    font-style: normal; }
+  #main-portfolio .imagenes-portfolio {
+    display: flex;
+    max-width: 700px;
+    justify-content: space-evenly;
+    margin: auto; }
+    #main-portfolio .imagenes-portfolio img {
+      height: 40vh;
+      transition: all .1s; }
+      #main-portfolio .imagenes-portfolio img:hover {
+        transform: scale(1.05); }
+
+@media (max-width: 821px) {
+  #main-portfolio {
+    margin: auto;
+    width: 320px;
+    height: 80vh; }
+  h1, .h1 {
+    margin: auto; }
+  p.primero {
+    width: 300px;
+    margin: 30px auto; }
+  .imagenes-portfolio {
+    flex-wrap: wrap;
+    flex-direction: row; }
+    .imagenes-portfolio img {
+      max-width: 103px; } }
+
+#main-tienda {
+  display: flex;
+  max-width: 800px;
+  margin: auto;
+  justify-content: center;
+  height: 80vh; }
+  #main-tienda h1, #main-tienda .h1 {
+    margin: 5px auto; }
+  #main-tienda .titulo {
+    display: flex;
+    width: 200px; }
+  #main-tienda .primero {
+    max-width: 800px;
+    font-family: ballinger, sans-serif;
+    font-weight: 300;
+    font-style: normal; }
+  #main-tienda .imagenes-tienda {
+    display: flex;
+    max-width: 800px;
+    justify-content: space-evenly; }
+    #main-tienda .imagenes-tienda img {
+      width: 180px;
+      transition: all .1s; }
+      #main-tienda .imagenes-tienda img:hover {
+        transform: scale(1.05); }
+
+@media (max-width: 500px) {
+  #main-tienda {
+    margin: auto;
+    width: 320px; }
+  p.primero {
+    margin: 20px auto; }
+  img {
+    max-width: 159px; } }
 
 #main-contacto section {
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 70vh;
+  height: 80vh;
   justify-content: center; }
   #main-contacto section .titulo {
     display: flex;
@@ -180,8 +251,8 @@
     margin: 30px 5px 10px 5px; }
 
 .footer {
-  display: grid;
-  height: 200px;
+  display: flex;
+  height: 15vh;
   background-color: black;
   font-family: ballinger, sans-serif;
   font-weight: 300;

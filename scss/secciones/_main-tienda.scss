@@ -1,25 +1,54 @@
 #main-tienda {
     display: flex;
+    max-width: 800px;
+    margin: auto;
+    justify-content: center;
+    height: 80vh;
+
+    h1 {
+        margin: 5px auto;
+    }
 
     .titulo {
         display: flex;
-        width: 250px;
+        width: 200px;
         @extend .estilo-titulo;
     }
 
     .primero {
+        max-width: 800px;
         font-family: ballinger, sans-serif;
         font-weight: 300;
         font-style: normal;
-        margin: 10px 5px 10px 5px;
+    }
+
+    .imagenes-tienda {
+        display: flex;
+        max-width: 800px;
+        justify-content: space-evenly;
+
+        img {
+            width: 180px;
+            transition: all .1s;
+
+            &:hover {
+                transform: scale(1.05)
+            }
+        }
+    }
+}
+
+@media(max-width: 500px) {
+    #main-tienda {
+        margin: auto;
+        width: 320px;
+    }
+
+    p.primero {
+        margin: 20px auto;
     }
 
     img {
-        height: 400px;
-        transition: all .1s;
-
-        &:hover {
-            transform: scale(1.05)
-        }
+        max-width: 159px;
     }
 }

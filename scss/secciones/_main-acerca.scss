@@ -1,6 +1,7 @@
 #main-acerca {
     .container {
         display: grid;
+        margin: auto;
         grid-template-columns: 2fr 4fr;
         grid-template-rows: 1fr 0.3fr 1fr;
         gap: 0px 0px;
@@ -33,6 +34,7 @@
 
         .titulo {
             display: grid;
+            margin: 5px auto;
             width: 180px;
             @extend .estilo-titulo;
         }
@@ -52,15 +54,17 @@
         align-items: center;
 
         .vision {
-            height: 500px;
+            margin: 5px auto;
+            height: 490px;
         }
     }
 
     .parrafo-2 {
-        padding: 15px;
+        padding: 25px;
 
         .subtitulo {
             display: grid;
+            margin: 5px auto;
             font-family: "Open Sans";
             color: rgb(7, 135, 135);
             font-size: large;
@@ -72,6 +76,7 @@
         }
 
         .segundo {
+            text-align: center;
             font-family: ballinger, sans-serif;
             font-size: larger;
             font-weight: 300;
@@ -94,6 +99,7 @@
 
 @media(max-width: 992px) {
     #main-acerca {
+        margin: auto;
         width: 300px;
 
         .parrafo {
@@ -127,7 +133,11 @@
         }
     }
 
-    .footer p {
-        font-size: smaller;
+    .footer {
+        flex-direction: column;
+
+        p {
+            font-size: smaller;
+        }
     }
 }

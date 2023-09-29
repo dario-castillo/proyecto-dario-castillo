@@ -1,13 +1,23 @@
 #main-index {
-    .titulo-index {
+    .container-fluid {
         display: flex;
-        font-family: "Open Sans";
-        font-size: large;
-        color: rgb(7, 135, 135);
-        justify-content: center;
-        align-items: center;
-        background-color: lightgray;
-        height: 60px;
+        flex-direction: column;
+        max-width: 800px;
+        justify-content: space-evenly;
+        height: 80vh;
+
+        .titulo-index {
+            display: flex;
+            justify-content: space-evenly;
+            font-family: "Open Sans";
+            font-size: large;
+            color: rgb(7, 135, 135);
+            align-items: center;
+            background-color: lightgray;
+            width: 270px;
+            height: 30px;
+            margin: 5px auto;
+        }
     }
 
     @keyframes nitidez {
@@ -21,6 +31,20 @@
     }
 
     .img-fluid {
+        width: 400px;
+        margin: auto;
         animation: nitidez 6s ease-out;
+    }
+}
+
+@media(max-width: 711px) {
+    #main-index {
+        margin: auto;
+        max-width: 300px;
+    }
+
+    img.img-fluid {
+        max-width: 280px;
+        margin: auto;
     }
 }
